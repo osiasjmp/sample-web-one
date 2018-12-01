@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 16px;
+}
+
+.nav {
+    /* display: block; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* height: 64px; */
+    padding: 8px 0;
+}
+
+.logo {
+    padding: 0 16px;
+    color: #1a1423;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    color: #414770;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li {
+    padding: 0 8px;
+}
+
+.nav ul li a {
+    color: #1a1423;
+    font-size: 0.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 24px;
+    background: linear-gradient( rgba(0, 0, 20, 0.6), rgba(0, 0, 0, 0.8)), url("../img/banner.jpg");
+    background-color: #1a1423;
+    height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h2, .banner p {
+    color: white;
+}
+
+.banner p {
+    font-size: 0.8rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 0;
+    background-color: #1a1423;
+    color: white;
+}
+
+.icons div {
+    padding: 12px 24px;
+}
+
+.icons i {
+    padding: 16px 8px;
+    font-size: 1.8rem;
+}
+
+.icons p {
+    max-width: 320px;
+    font-size: 0.8rem;
+}
+
+.section {
+    margin: 48px;
+}
+
+.section .img {
+    height: 240px;
+}
+
+.img.red {
+    background: linear-gradient( rgba(20, 0, 0, 1), rgba(40, 0, 0, 1));
+    background-color: #1a1423;
+}
+
+.img.green {
+    background: linear-gradient( rgba(0, 20, 0, 1), rgba(0, 40, 0, 1));
+    background-color: #1a1423;
+}
+
+.img.blue {
+    background: linear-gradient( rgba(0, 0, 20, 1), rgba(0, 0, 40, 1));
+    background-color: #1a1423;
+}
+
+.section .desc {
+    padding: 24px;
+}
+
+.section .desc h2 {
+    padding: 12px 0;
+    font-size: 1.2rem;
+}
+
+.section .desc p {
+    font-size: 0.9rem;
+    letter-spacing: 0.08rem;
+}
+
+.section .desc a {
+    color: #1a1423;
+    font-size: 0.8rem;
+}
+
+.footer {
+    background-color: #1a1423;
+    padding: 24px 48px
+}
+
+.footer a, footer p {
+    color: white;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    .banner {
+        height: 320px;
+    }
+
+    .icons {
+        flex-direction: row;
+    }
+
+    .section {
+        display: flex;
+    }
+
+    .section .img, .section .desc {
+        height: unset;
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .banner {
+        height: 480px;
+    }
+
+    .section {
+        margin: 48px 96px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    .banner {
+        height: 560px;
+    }
+
+    .section {
+        margin: 48px 128px;
+    }
+}
