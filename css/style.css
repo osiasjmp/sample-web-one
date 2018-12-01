@@ -9,10 +9,6 @@ body {
 }
 
 .nav {
-    /* display: block; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* height: 64px; */
     padding: 8px 0;
 }
 
@@ -177,6 +173,14 @@ body {
         height: 320px;
     }
 
+    .banner h2 {
+        font-size: 3.2rem;
+    }
+
+    .banner p {
+        font-size: 1.1rem;
+    }
+
     .icons {
         flex-direction: row;
     }
@@ -198,6 +202,14 @@ body {
         height: 480px;
     }
 
+    .banner h2 {
+        font-size: 3.6rem;
+    }
+
+    .banner p {
+        font-size: 1.15rem;
+    }
+
     .section {
         margin: 48px 96px;
     }
@@ -207,6 +219,14 @@ body {
 
     .banner {
         height: 560px;
+    }
+
+    .banner h2 {
+        font-size: 4rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
     }
 
     .section {
